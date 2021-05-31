@@ -155,7 +155,7 @@ void setroot()
 	screen = DefaultScreen(dpy);
 	root = RootWindow(dpy, screen);
 	XStoreName(dpy, root, statusstr[0]);
-	printf("%s\n",statusstr[0]);
+	//printf("%s\n",statusstr[0]);
 	XCloseDisplay(dpy);
 }
 
@@ -163,7 +163,7 @@ void pstdout()
 {
 	if (!getstatus(statusstr[0], statusstr[1]))//Only write out if text has changed.
 		return;
-	printf("%s\n",statusstr[0]);
+	//printf("%s\n",statusstr[0]);
 	fflush(stdout);
 }
 
